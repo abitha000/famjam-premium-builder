@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import logo from "@/assets/famjam-logo.jpg.asset.json";
 
 const KEY = "famjam_welcome_shown";
 
@@ -50,7 +49,6 @@ export default function WelcomeAnimation() {
           >
             Essentials
           </motion.span>
-          <img src={logo.url} alt="" className="sr-only" aria-hidden />
         </motion.div>
       )}
     </AnimatePresence>
