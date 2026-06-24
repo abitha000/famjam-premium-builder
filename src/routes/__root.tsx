@@ -77,14 +77,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "FamJam Essentials — Premium Customized Gifting" },
+      {
+        name: "description",
+        content:
+          "Customized hampers, jewellery, toys, accessories & return gifts. Premium gifting for every occasion, shipped pan India.",
+      },
+      { name: "author", content: "FamJam Essentials" },
+      { property: "og:title", content: "FamJam Essentials — Premium Customized Gifting" },
+      {
+        property: "og:description",
+        content:
+          "Customized hampers, jewellery, toys, accessories & return gifts. Premium gifting for every occasion, shipped pan India.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "FamJam Essentials — Premium Customized Gifting" },
+      {
+        name: "twitter:description",
+        content:
+          "Customized hampers, jewellery, toys, accessories & return gifts. Premium gifting for every occasion, shipped pan India.",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
