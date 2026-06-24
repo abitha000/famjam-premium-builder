@@ -5,4 +5,14 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), tsconfigPaths()],
+  server: {
+    host: "::",
+    port: 8080,
+    strictPort: true,
+    allowedHosts: true,
+  },
+  preview: {
+    host: "::",
+    port: 8080,
+  },
 });
