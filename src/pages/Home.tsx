@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle } from "lucide-react";
 import WelcomeAnimation from "@/components/site/WelcomeAnimation";
 import Header from "@/components/site/Header";
@@ -13,19 +12,7 @@ import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
 import { WHATSAPP } from "@/lib/site-data";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "FamJam Essentials — Premium Customized Gifting" },
-      { name: "description", content: "Customized hampers, jewellery, toys, accessories & return gifts. Premium gifting for every occasion, shipped pan India. Order on WhatsApp." },
-      { property: "og:title", content: "FamJam Essentials — Premium Customized Gifting" },
-      { property: "og:description", content: "Customized hampers, jewellery, toys, accessories & return gifts. Premium gifting for every occasion, shipped pan India." },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <WelcomeAnimation />
